@@ -19,7 +19,7 @@ for i in range(0, len(lines)):
 
 stacks = []
 
-# Read crates to stacks for a FILO order
+# Read crates to stacks
 for i in range(0, num_rows):
     for j in range(0, num_cols):
         if i == 0:
