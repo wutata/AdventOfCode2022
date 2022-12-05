@@ -1,7 +1,6 @@
 
-f = open("day1.txt")
-# f = open("day1test.txt")
-
+f = open("input.txt")
+# f = open("test.txt")
 
 lines = f.readlines()
 

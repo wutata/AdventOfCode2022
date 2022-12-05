@@ -1,7 +1,6 @@
 
-f = open("day4.txt")
-# f = open("day4test.txt")
-
+f = open("input.txt")
+# f = open("test.txt")
 
 lines = f.readlines()
 
@@ -17,7 +16,7 @@ for line in lines:
     left_range = range(int(left[0]), int(left[1])+1)
     right_range = range(int(right[0]), int(right[1])+1)
     
-    if all(e in right_range for e in left_range) or all(e in left_range for e in right_range):
+    if any(e in right_range for e in left_range) or any(e in left_range for e in right_range):
         total += 1
     
 print(total)

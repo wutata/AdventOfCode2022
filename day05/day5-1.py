@@ -1,7 +1,6 @@
 
-f = open("day5.txt")
-# f = open("day5test.txt")
-
+f = open("input.txt")
+# f = open("test.txt")
 
 lines = f.readlines()
 
@@ -41,7 +40,7 @@ for i in range(num_rows+2, len(lines)):
     to_stack = int(commands[5])-1
     
     crates_to_move = stacks[from_stack][0:count]
-    # crates_to_move = crates_to_move[::-1]
+    crates_to_move = crates_to_move[::-1]
     
     stacks[to_stack] = crates_to_move + stacks[to_stack]
     stacks[from_stack] = stacks[from_stack][count:]
